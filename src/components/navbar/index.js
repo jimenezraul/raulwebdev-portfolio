@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const navLinks = [
   { path: '/', name: 'Home' },
   { path: '#about-me', name: 'About Me' },
@@ -9,13 +7,13 @@ const navLinks = [
 
 const NavBar = () => {
   return (
-    <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5'>
+    <nav className='absolute z-50 top-0 left-0 right-0 bg-[#ffffff25] shadow px-2 sm:px-4 py-2.5'>
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
-        <Link to={'https://raulwebdev.com'} className='flex items-center'>
+        <a href="/" className='flex items-center'>
           <span className='self-center text-xl font-semibold whitespace-nowrap'>
             Portfolio
           </span>
-        </Link>
+        </a>
         <button
           data-collapse-toggle='navbar-default'
           type='button'
@@ -38,16 +36,16 @@ const NavBar = () => {
             ></path>
           </svg>
         </button>
-        <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
-          <ul className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white'>
+        <div className='hidden w-full md:block md:w-auto'>
+          <ul className='flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link
-                  to={link.path}
-                  className='block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 '
+                <a
+                  href={link.path}
+                  className='block py-2 pl-3 pr-4 text-gray-700  md:hover:text-blue-700 md:p-0 '
                 >
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
