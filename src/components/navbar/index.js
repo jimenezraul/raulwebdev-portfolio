@@ -6,10 +6,20 @@ const navLinks = [
 ];
 
 const NavBar = () => {
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute('href');
+    const offsetTop = document.querySelector(target).offsetTop;
+    window.scroll({
+      top: offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav className='absolute z-50 top-0 left-0 right-0 bg-[#ffffff25] shadow px-2 sm:px-4 py-2.5'>
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
-        <a href="/" className='flex items-center'>
+        <a href='/' className='flex items-center'>
           <span className='self-center text-xl font-semibold whitespace-nowrap'>
             Portfolio
           </span>
@@ -42,6 +52,7 @@ const NavBar = () => {
               <li key={link.name}>
                 <a
                   href={link.path}
+                  onClick={handleScroll}
                   className='block py-2 pl-3 pr-4 text-gray-700  md:hover:text-blue-700 md:p-0 '
                 >
                   {link.name}
