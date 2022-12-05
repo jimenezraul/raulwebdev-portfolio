@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 import Hero from './components/hero';
 import AboutMe from './components/about-me';
 import Projects from './components/Projects';
+import GoToTheTop from './components/GoToTheTop';
 // ..
 AOS.init();
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Projects />
+      <GoToTheTop />
     </>
   );
 }

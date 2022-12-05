@@ -17,7 +17,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className='absolute z-50 top-0 left-0 right-0 bg-[#ffffff25] shadow px-2 sm:px-4 py-2.5'>
+    <nav className='absolute z-50 top-0 left-0 right-0 bg-[#274c7716] shadow px-2 sm:px-4 py-2.5'>
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
         <a href='/' className='flex items-center'>
           <span className='self-center text-xl font-semibold whitespace-nowrap'>
