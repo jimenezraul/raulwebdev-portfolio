@@ -1,6 +1,7 @@
 import profilePic from './profile.png';
 import bg from './blue-euclidean.png';
 import NavBar from '../navbar';
+import { handleScroll } from '../../utils/handleScroll';
 
 const Hero = () => {
   return (
@@ -15,22 +16,34 @@ const Hero = () => {
             data-aos='fade-right'
             className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'
           >
-            <h1 className='text-4xl font-bold text-center roboto'>
-              Hi there! I'm <span className='text-[#274c77]'>Raul</span>
+            <h1 className='text-slate-700 text-4xl font-bold text-center roboto'>
+              Hi there! I'm <span className='text-blue-700'>Raul</span>
             </h1>
             <p className='text-center text-lg'>
               I'm a Full Stack Web Developer based in Deltona, Florida.
             </p>
-            <button className='content-center text-center bg-[#274c77] hover:bg-[#1e3c5d] text-white px-4 py-2 rounded-lg mt-4'>
-              Resume
-            </button>
+            <div className='flex flex-wrap justify-center space-x-5'>
+              <a
+                href='mailto:rauljimenezengineer@gmail.com'
+                className='content-center text-center bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg mt-4 shadow-lg'
+              >
+                Let's Talk
+              </a>
+              <a
+                className='content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow-lg'
+                onClick={handleScroll}
+                href='#projects'
+              >
+                My Projects
+              </a>
+            </div>
           </div>
           <div data-aos='fade-left' className='w-full md:w-1/2 max-w-lg'>
             <img src={profilePic} alt='profile'></img>
           </div>
         </div>
       </div>
-      </section>
+    </section>
   );
 };
 

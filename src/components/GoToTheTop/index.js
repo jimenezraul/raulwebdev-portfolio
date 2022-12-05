@@ -25,8 +25,8 @@ const GoToTheTop = () => {
     return (
         <div className="fixed bottom-10 right-10">
         {isVisible && (
-            <div onClick={scrollToTop} className="flex justify-center items-center bg-white h-16 w-16 rounded-full cursor-pointer shadow-lg border border-slate-300">
-            <i className="text-2xl fa-solid fa-angle-up"></i>
+            <div onClick={scrollToTop} className="transition-all hover:scale-110 flex justify-center items-center bg-white h-16 w-16 rounded-full cursor-pointer shadow-lg border border-slate-300">
+            <i className="text-2xl text-blue-600 fa-solid fa-angle-up"></i>
             </div>
         )}
         </div>
