@@ -7,7 +7,7 @@ import techBlog from '../img/blog.png';
 
 export const projectsList = [
   {
-    title: 'ConnectME | Social Media App',
+    title: 'ConnectME | Social Media',
     description:
       'ConnectME is a social media application that allows users to create an account, make posts, and interact with other users. It is built using the MERN stack (MongoDB, Express, React, Node.js) and is deployed on Heroku.',
     image: connectMe,

@@ -5,7 +5,7 @@ import { handleScroll } from '../../utils/handleScroll';
 
 const Hero = () => {
   return (
-    <section className='relative flex justify-center items-center bg-[#e7ecef]'>
+    <section className='relative flex justify-center items-center bg-[#e7ecef] overflow-hidden'>
       <NavBar />
       <div className='absolute top-0 bottom-0 left-0 right-0 opacity-30'>
         <img src={bg} alt='bg' className='w-full h-full' />
@@ -17,10 +17,10 @@ const Hero = () => {
             data-aos-duration='1000'
             className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'
           >
-            <h1 className='text-slate-700 text-4xl font-bold text-center roboto'>
+            <h1 className='text-slate-700 text-3xl md:text-4xl font-bold text-center roboto'>
               Hi there! I'm <span className='text-blue-700'>Raul</span>
             </h1>
-            <p className='text-center text-lg'>
+            <p className='text-center text-md md:text-lg'>
               I'm a Full Stack Web Developer based in Deltona, Florida.
             </p>
             <div className='flex flex-wrap justify-center space-x-5'>

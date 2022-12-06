@@ -14,7 +14,7 @@ const NavBar = () => {
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
         <a href='/' className='flex items-center'>
           <i className='mr-2 text-2xl text-blue-700 fa-solid fa-layer-group'></i>
-          <span className='roboto text-slate-700 self-center text-2xl font-semibold whitespace-nowrap'>
+          <span className='roboto text-slate-700 self-center text-xl md:text-2xl font-semibold whitespace-nowrap'>
             RaulWebDev
           </span>
         </a>
@@ -47,7 +47,7 @@ const NavBar = () => {
                 <a
                   href={link.path}
                   onClick={handleScroll}
-                  className='block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:hover:border-blue-700  md:hover:text-blue-700 md:p-0 '
+                  className='transition-all ease-in-out duration-300 hover:scale-110 block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:hover:border-blue-700  md:hover:text-blue-700 md:p-0 '
                 >
                   {link.name}
                 </a>

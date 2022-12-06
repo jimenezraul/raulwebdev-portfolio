@@ -15,38 +15,40 @@ const ProjectCard = ({ project, index }) => {
           style={style}
           title={project.title}
         ></div>
-        <div className='flex flex-col justify-between p-4'>
-          <div className='px-6 py-4'>
-            <div className='text-slate-700 font-bold text-xl mb-2 border-b border-slate-200 pb-4'>
-              {project.title}
+        <div className='flex flex-col p-4 h-full'>
+          <div className='flex-1'>
+            <div className='px-6 py-4'>
+              <div className='text-slate-700 font-bold text-xl mb-2 border-b border-slate-200 pb-4'>
+                {project.title}
+              </div>
+              <p className='text-slate-700 text-base'>{project.description}</p>
             </div>
-            <p className='text-slate-700 text-base'>{project.description}</p>
-          </div>
-          <div className='px-6 pt-4 pb-2 flex flex-wrap space-x-1'>
-            <h1 className='font-bold text-slate-700 text-base'>Tech used:</h1>
-            {project.tech.map((tech, index) => {
-              const isLast = index === project.tech.length - 1;
-              return (
-                <span key={index}>
-                  {tech}
-                  {isLast ? '.' : ','}
+            <div className='px-6 pt-4 pb-2 flex flex-wrap space-x-1'>
+              <h1 className='font-bold text-slate-700 text-base'>Tech used:</h1>
+              {project.tech.map((tech, index) => {
+                const isLast = index === project.tech.length - 1;
+                return (
+                  <span key={index}>
+                    {tech}
+                    {isLast ? '.' : ','}
+                  </span>
+                );
+              })}
+            </div>
+            {project.demoAccount && (
+              <div className='px-6 pt-4 pb-2 flex flex-col space-x-1'>
+                <h1 className='font-bold text-slate-700 text-base'>
+                  Demo Account:
+                </h1>
+                <span className='text-slate-700'>
+                  Email: {project.demoAccount.email}
                 </span>
-              );
-            })}
+                <span className='text-slate-700'>
+                  Password: {project.demoAccount.password}
+                </span>
+              </div>
+            )}
           </div>
-          {project.demoAccount && (
-            <div className='px-6 pt-4 pb-2 flex flex-col space-x-1'>
-              <h1 className='font-bold text-slate-700 text-base'>
-                Demo Account:
-              </h1>
-              <span className='text-slate-700'>
-                Email: {project.demoAccount.email}
-              </span>
-              <span className='text-slate-700'>
-                Password: {project.demoAccount.password}
-              </span>
-            </div>
-          )}
           <div className='px-6 py-4 flex space-x-1'>
             <a
               href={project.deployed}
