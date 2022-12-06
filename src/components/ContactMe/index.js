@@ -44,7 +44,7 @@ const ContactMe = () => {
                   className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300'
                 >
                   <div className='px-4 py-5 flex-auto'>
-                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-14 h-14 mb-5 shadow-lg rounded-full bg-blue-400'>
+                    <div className='text-white p-3 text-center inline-flex items-center justify-center w-14 h-14 mb-5 shadow rounded-full bg-blue-400 border border-slate-300'>
                       <i className={`text-3xl ${link.icon}`}></i>
                     </div>
                     <h6 className='text-slate-600 text-xl font-semibold'>
