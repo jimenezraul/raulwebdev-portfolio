@@ -53,19 +53,19 @@ const Skills = () => {
               <div
                 data-aos='fade-up'
                 data-aos-duration='1000'
-                className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300'
+                className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300 overflow-hidden'
               >
-                <div className='px-4 py-5 flex-auto'>
-                  <div className='text-white p-3 text-center inline-flex items-center justify-center w-14 h-14 mb-5 shadow-lg rounded-full bg-blue-400'>
-                    <i className={`text-3xl ${skill.icon}`}></i>
-                  </div>
-                  <h6 className='text-slate-700 text-xl font-semibold'>
+                <div className='flex-auto'>
+                  <div className='text-white p-3 text-center inline-flex flex-col items-center justify-center w-full mb-4 shadow  bg-blue-400'>
+                              <i className={`text-4xl ${skill.icon}`}></i>
+                              <h6 className='text-white text-xl font-bold '>
                     {skill.title}
                   </h6>
+                  </div>
                   <div className='mt-2 mb-4 text-slate-600'>
                     <ul>
                       {skill.skills.map((skill, index) => (
-                        <li key={index}>{skill}</li>
+                        <li key={index} className="font-semibold">{skill}</li>
                       ))}
                     </ul>
                   </div>
