@@ -1,16 +1,25 @@
+import { projectsList } from '../../utils/projectsList';
+import ProjectCard from '../ProjectCard';
+
 const Projects = () => {
   return (
-    <section id="projects" className='relative py-20 bg-[#e7ecef]'>
-      <div className='container mx-auto px-4'>
+    <section id='projects' className='relative py-10 h-full bg-[#e7ecef]'>
+      <div className='container mx-auto px-2'>
         <div className='flex flex-wrap justify-center text-center mb-10'>
           <div className='w-full lg:w-6/12 px-4'>
-            <h2  data-aos='fade-up' data-aos-duration="1000" className='drop-shadow-lg roboto text-slate-600 text-dlate-500 text-4xl font-semibold'>My Projects</h2>
+            <h2
+              data-aos='fade-up'
+              data-aos-duration='1000'
+              className=' roboto text-slate-700 text-dlate-500 text-4xl font-semibold'
+            >
+              My Projects
+            </h2>
           </div>
         </div>
         <div className='flex flex-wrap'>
-          <div className='w-full md:w-4/12 px-4 text-center'>
-          
-          </div>
+          {projectsList.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))}
         </div>
       </div>
     </section>

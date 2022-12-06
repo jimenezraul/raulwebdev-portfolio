@@ -1,6 +1,6 @@
 import profilePic from './profile.png';
 import bg from './blue-euclidean.png';
-import NavBar from '../navbar';
+import NavBar from '../Navbar';
 import { handleScroll } from '../../utils/handleScroll';
 
 const Hero = () => {
@@ -14,6 +14,7 @@ const Hero = () => {
         <div className='w-full flex flex-wrap-reverse items-center justify-center py-2'>
           <div
             data-aos='fade-right'
+            data-aos-duration='1000'
             className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'
           >
             <h1 className='text-slate-700 text-4xl font-bold text-center roboto'>
@@ -25,12 +26,12 @@ const Hero = () => {
             <div className='flex flex-wrap justify-center space-x-5'>
               <a
                 href='mailto:rauljimenezengineer@gmail.com'
-                className='content-center text-center bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg mt-4 shadow-lg'
+                className='content-center text-center bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg mt-4 shadow'
               >
                 Let's Talk
               </a>
               <a
-                className='content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow-lg'
+                className='content-center text-center border backdrop-blur border-blue-400 hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
                 onClick={handleScroll}
                 href='#projects'
               >
@@ -38,7 +39,11 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div data-aos='fade-left' className='w-full md:w-1/2 max-w-lg'>
+          <div
+            data-aos='fade-left'
+            data-aos-duration='1000'
+            className='w-full md:w-1/2 max-w-lg'
+          >
             <img src={profilePic} alt='profile'></img>
           </div>
         </div>

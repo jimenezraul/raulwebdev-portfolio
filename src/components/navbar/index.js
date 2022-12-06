@@ -10,11 +10,12 @@ const navLinks = [
 
 const NavBar = () => {
   return (
-    <nav className='absolute z-50 top-0 left-0 right-0 bg-[#07127a16] shadow px-2 sm:px-4 py-2.5'>
+    <nav className='absolute z-50 top-0 left-0 right-0 backdrop-blur-sm border-b shadow px-2 sm:px-4 py-2.5'>
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
         <a href='/' className='flex items-center'>
-          <span className='self-center text-xl font-semibold whitespace-nowrap'>
-            Portfolio
+          <i className='mr-2 text-2xl text-blue-700 fa-solid fa-layer-group'></i>
+          <span className='roboto text-slate-700 self-center text-2xl font-semibold whitespace-nowrap'>
+            RaulWebDev
           </span>
         </a>
         <button
@@ -46,7 +47,7 @@ const NavBar = () => {
                 <a
                   href={link.path}
                   onClick={handleScroll}
-                  className='block py-2 pl-3 pr-4 text-gray-700  md:hover:text-blue-700 md:p-0 '
+                  className='block py-2 pl-3 pr-4 text-gray-700 border-b-2 md:hover:border-blue-700  md:hover:text-blue-700 md:p-0 '
                 >
                   {link.name}
                 </a>
