@@ -2,7 +2,6 @@ import { handleScroll } from '../../utils/handleScroll';
 import { useState } from 'react';
 
 const navLinks = [
-  { path: '/', name: 'Home' },
   { path: '#about-me', name: 'About Me' },
   { path: '#skills', name: 'Skills' },
   { path: '#projects', name: 'Projects' },
@@ -11,6 +10,12 @@ const navLinks = [
 
 const NavBar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
+
+  const handleClose = (e) => {
+    e.preventDefault();
+    toggleExpansion(false);
+    handleScroll(e);
+  };
 
   return (
     <nav className='fixed z-50 top-0 left-0 right-0 backdrop-blur-md border-b border-slate-300 shadow px-2 sm:px-4 py-2.5'>
@@ -23,7 +28,7 @@ const NavBar = () => {
           href='/'
           className='z-50 flex items-center bg-[#ffffffb1] rounded-full py-1 px-3 shadow'
         >
-          <i className='mr-2 text-2xl text-blue-700 fa-solid fa-layer-group'></i>
+          <i className='mr-2 text-2xl text-blue-400 fa-solid fa-layer-group'></i>
           <span className='roboto text-slate-700 self-center text-xl md:text-2xl font-semibold whitespace-nowrap'>
             RaulWebDev
           </span>
@@ -61,7 +66,7 @@ const NavBar = () => {
               <li key={link.name}>
                 <a
                   href={link.path}
-                  onClick={handleScroll}
+                  onClick={handleClose}
                   className='transition-all ease-in-out duration-300 hover:scale-110 block py-2 pl-3 pr-4 text-gray-700  md:hover:text-blue-700 md:p-0 '
                 >
                   {link.name}

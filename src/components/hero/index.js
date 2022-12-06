@@ -18,7 +18,7 @@ const Hero = () => {
             className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'
           >
             <h1 className='text-slate-700 text-3xl md:text-4xl font-bold text-center roboto'>
-              Hi there! I'm <span className='text-blue-700'>Raul</span>
+              Hi there! I'm <span className='roboto text-blue-500'>Raul</span>
             </h1>
             <p className='text-center text-md md:text-lg'>
               I'm a Full Stack Web Developer based in Deltona, Florida.
@@ -26,7 +26,7 @@ const Hero = () => {
             <div className='flex flex-wrap justify-center space-x-5'>
               <a
                 href='mailto:rauljimenezengineer@gmail.com'
-                className='content-center text-center bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg mt-4 shadow'
+                className='content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow'
               >
                 Let's Talk
               </a>
