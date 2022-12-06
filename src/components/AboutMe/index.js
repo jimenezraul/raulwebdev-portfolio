@@ -11,7 +11,7 @@ const AboutMe = () => {
         About Me
       </h1>
       <div className='container mx-auto px-2 h-full my-10'>
-        <div className='flex flex-wrap justify-center items-center text-center'>
+        <div className='flex flex-wrap justify-center items-center'>
           <div className='w-full md:w-6/12 px-4 max-w-xs mb-4'>
             <img
               data-aos='fade-right'

@@ -1,4 +1,5 @@
 import { handleScroll } from '../../utils/handleScroll';
+import { useState } from 'react';
 
 const navLinks = [
   { path: '/', name: 'Home' },
@@ -9,19 +10,29 @@ const navLinks = [
 ];
 
 const NavBar = () => {
+  const [isExpanded, toggleExpansion] = useState(false);
+
   return (
     <nav className='fixed z-50 top-0 left-0 right-0 backdrop-blur-md border-b border-slate-300 shadow px-2 sm:px-4 py-2.5'>
-      <div className='container flex flex-wrap items-center justify-between mx-auto'>
-        <a href='/' className='flex items-center bg-[#ffffffb1] rounded-full py-1 px-3 shadow'>
+      <div
+        className={`container ${
+          isExpanded ? 'max-h-80' : 'max-h-10'
+        } z-50 transition-all md:max-h-16 flex flex-wrap items-center justify-between mx-auto`}
+      >
+        <a
+          href='/'
+          className='z-50 flex items-center bg-[#ffffffb1] rounded-full py-1 px-3 shadow'
+        >
           <i className='mr-2 text-2xl text-blue-700 fa-solid fa-layer-group'></i>
           <span className='roboto text-slate-700 self-center text-xl md:text-2xl font-semibold whitespace-nowrap'>
             RaulWebDev
           </span>
         </a>
         <button
+          onClick={() => toggleExpansion(!isExpanded)}
           data-collapse-toggle='navbar-default'
           type='button'
-          className='inline-flex items-center p-2 ml-3 text-sm text-slate-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+          className='border border-slate-300  inline-flex items-center p-2 ml-3 text-sm text-slate-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
           aria-controls='navbar-default'
           aria-expanded='false'
         >
@@ -40,7 +51,11 @@ const NavBar = () => {
             ></path>
           </svg>
         </button>
-        <div className='hidden w-full md:block md:w-auto'>
+        <div
+          className={`${
+            isExpanded ? 'translate-y-0' : '-translate-y-80'
+          } z-0 md:translate-y-0 transition-all ease-in-out w-full md:block md:w-auto`}
+        >
           <ul className='flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium rounded-full'>
             {navLinks.map((link) => (
               <li key={link.name}>

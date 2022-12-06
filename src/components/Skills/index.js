@@ -27,7 +27,7 @@ const skillsList = [
   },
   {
     title: 'Other',
-    skills: ['Git', 'GitHub', 'Heroku', 'Netlify', 'OAuth2', 'Scrum Board'],
+    skills: ['Git', 'GitHub', 'Heroku', 'Netlify', 'OAuth2', 'Scrum Board', 'VS Code'],
     icon: 'fa-solid fa-screwdriver-wrench',
   },
 ];
