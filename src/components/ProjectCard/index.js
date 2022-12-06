@@ -7,9 +7,9 @@ const ProjectCard = ({ project, index }) => {
       data-aos='fade-up'
       data-aos-duration='1000'
       key={index}
-      className='flex justify-center w-full md:w-1/2 lg:w-4/12 p-1'
+      className='flex justify-center w-full md:w-1/2 lg:w-4/12 px-4 mb-4'
     >
-      <div className='flex flex-col bg-white border border-slate-300 rounded-lg shadow overflow-hidden'>
+      <div className='flex flex-col bg-white rounded-lg shadow overflow-hidden'>
         <div
           class='h-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden'
           style={style}
@@ -51,7 +51,7 @@ const ProjectCard = ({ project, index }) => {
           </div>
           <div className='px-6 py-4 flex space-x-1'>
             <a
-              href={project.deployed}
+              href={project.liveDemo}
               target='_blank'
               rel='noreferrer'
               className='cursor-pointer bg-white hover:bg-gray-100 text-slate-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'
@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index }) => {
               See Live
             </a>
             <a
-              href={project.github}
+              href={project.sourceCode}
               target='_blank'
               rel='noreferrer'
               className='cursor-pointer bg-blue-400 hover:bg-blue-500 text-white font-semibold py-2 px-4 border border-blue-500 rounded shadow'

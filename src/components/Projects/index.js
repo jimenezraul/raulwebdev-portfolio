@@ -3,14 +3,14 @@ import ProjectCard from '../ProjectCard';
 
 const Projects = () => {
   return (
-    <section id='projects' className='relative py-10 h-full bg-[#e7ecef]'>
+    <section id='projects' className='relative py-10 h-full bg-gradient-to-b  from-blue-400 to-blue-800'>
       <div className='container mx-auto px-2'>
         <div className='flex flex-wrap justify-center text-center mb-10'>
           <div className='w-full lg:w-6/12 px-4'>
             <h2
               data-aos='fade-up'
               data-aos-duration='1000'
-              className=' roboto text-slate-700 text-dlate-500 text-4xl font-semibold'
+              className='drop-shadow-lg roboto text-white text-dlate-500 text-4xl font-semibold'
             >
               My Projects
             </h2>
