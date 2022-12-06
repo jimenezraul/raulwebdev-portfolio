@@ -2,7 +2,7 @@
 
 const Footer = () => (
     <footer className="flex justify-center bg-blue-700">
-        <p className="roboto text-xl text-slate-300 p-5">RaulWebDev © {new Date().getFullYear()}</p>
+        <p className="roboto text-xl text-slate-300 p-10">RaulWebDev © {new Date().getFullYear()}</p>
     </footer>
 );
 
