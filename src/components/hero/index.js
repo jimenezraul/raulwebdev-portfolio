@@ -1,5 +1,5 @@
-import profilePic from './profile.png';
-import bg from './blue-euclidean.png';
+import profilePic from '../../img/profile.png';
+import bg from '../../img/blue-euclidean.png';
 import NavBar from '../Navbar';
 import { handleScroll } from '../../utils/handleScroll';
 
