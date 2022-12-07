@@ -31,7 +31,7 @@ const Hero = () => {
                 Let's Talk
               </a>
               <a
-                className='content-center text-center border backdrop-blur border-blue-400 hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
+                className='content-center text-center border border-gray-400 backdrop-blur hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
                 onClick={handleScroll}
                 href='#projects'
               >
