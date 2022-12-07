@@ -9,6 +9,8 @@ const skillsList = [
       'Redux',
       'TailwindCSS',
       'Bootstrap',
+      'jQuery',
+      'OAuth',
     ],
     icon: 'fab fa-html5',
   },
@@ -16,18 +18,30 @@ const skillsList = [
     title: 'Back End',
     skills: [
       'NodeJS',
-      'Express',
+      'ExpressJS',
       'MySQL',
       'Sequelize',
       'MongoDB',
       'Mongoose',
       'GraphQL',
+      'Restful APIs',
+      'Python',
     ],
     icon: 'fa-solid fa-code',
   },
   {
     title: 'Other',
-    skills: ['Git', 'GitHub', 'Heroku', 'Netlify', 'OAuth2', 'Scrum Board', 'VS Code'],
+    skills: [
+      'Git',
+      'GitHub',
+      'Heroku',
+      'Netlify',
+      'Webpack',
+      'TypeScript',
+      'Jest',
+      'Scrum Board',
+      'VS Code',
+    ],
     icon: 'fa-solid fa-screwdriver-wrench',
   },
 ];
@@ -57,15 +71,17 @@ const Skills = () => {
               >
                 <div className='flex-auto'>
                   <div className='text-white p-3 text-center inline-flex flex-col items-center justify-center w-full mb-4 shadow  bg-blue-400'>
-                              <i className={`text-4xl ${skill.icon}`}></i>
-                              <h6 className='text-white text-xl font-bold '>
-                    {skill.title}
-                  </h6>
+                    <i className={`drop-shadow-md text-4xl ${skill.icon}`}></i>
+                    <h6 className='drop-shadow-md text-white text-xl font-bold '>
+                      {skill.title}
+                    </h6>
                   </div>
                   <div className='mt-2 mb-4 text-slate-600'>
                     <ul>
                       {skill.skills.map((skill, index) => (
-                        <li key={index} className="font-semibold">{skill}</li>
+                        <li key={index} className='font-semibold'>
+                          {skill}
+                        </li>
                       ))}
                     </ul>
                   </div>
