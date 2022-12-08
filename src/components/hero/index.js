@@ -12,9 +12,7 @@ const Hero = () => {
       </div>
       <div className='container mx-auto'>
         <div className='w-full flex flex-wrap-reverse items-center justify-center py-2'>
-          <div
-            className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'
-          >
+          <div className='flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'>
             <h1 className='text-slate-700 text-3xl md:text-4xl font-bold text-center roboto'>
               Hi there! I'm <span className='roboto text-blue-500'>Raul</span>
             </h1>
@@ -24,12 +22,12 @@ const Hero = () => {
             <div className='flex flex-wrap justify-center space-x-5'>
               <a
                 href='mailto:rauljimenezengineer@gmail.com'
-                className='content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow'
+                className='z-40 content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow'
               >
                 Let's Talk
               </a>
               <a
-                className='content-center text-center border border-gray-400 backdrop-blur hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
+                className='z-40 content-center text-center border border-gray-400 backdrop-blur hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
                 onClick={handleScroll}
                 href='#projects'
               >
@@ -37,9 +35,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div
-            className='z-50 w-full md:w-1/2 max-w-md'
-          >
+          <div className='z-40 w-full md:w-1/2 max-w-md'>
             <img src={profilePic} alt='profile'></img>
           </div>
         </div>
