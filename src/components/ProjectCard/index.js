@@ -4,8 +4,6 @@ const ProjectCard = ({ project, index }) => {
   };
   return (
     <div
-      data-aos='fade-up'
-      data-aos-duration='1000'
       key={index}
       className='flex justify-center w-full md:w-1/2 lg:w-4/12 px-4 mb-4'
     >

@@ -4,8 +4,6 @@ const AboutMe = () => {
   return (
     <section id='about-me' className='py-10 h-full bg-blue-400'>
       <h1
-        data-aos='fade-up'
-        data-aos-duration='1000'
         className='drop-shadow-lg roboto text-4xl text-center text-white roboto pt-5'
       >
         About Me
@@ -14,8 +12,6 @@ const AboutMe = () => {
         <div className='flex flex-wrap justify-center items-center'>
           <div className='w-full md:w-6/12 px-4 max-w-xs mb-4'>
             <img
-              data-aos='fade-right'
-              data-aos-duration='1000'
               src={logo}
               alt='profile'
               className='rounded-full bg-white border border-slate-400 shadow-md'
@@ -24,8 +20,6 @@ const AboutMe = () => {
 
           <div className='w-full md:w-6/12 px-4'>
             <p
-              data-aos='fade-left'
-              data-aos-duration='1000'
               className='text-slate-600 text-lg font-semibold bg-white p-5 rounded-lg border border-slate-400 shadow'
             >
               I am a Full Stack Developer with a passion for building beautiful and

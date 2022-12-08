@@ -23,8 +23,6 @@ const ContactMe = () => {
         <div className='flex flex-wrap justify-center text-center mb-10'>
           <div className='w-full lg:w-6/12 px-4'>
             <h2
-              data-aos='fade-up'
-              data-aos-duration='1000'
               className='roboto text-slate-700 text-4xl font-semibold'
             >
               Contact Me
@@ -39,8 +37,6 @@ const ContactMe = () => {
             >
               <a href={link.link} target='_blank' rel='noreferrer'>
                 <div
-                  data-aos='fade-up'
-                  data-aos-duration='1000'
                   className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300'
                 >
                   <div className='px-4 py-5 flex-auto'>

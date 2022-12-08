@@ -8,8 +8,6 @@ const Projects = () => {
         <div className='flex flex-wrap justify-center text-center mb-10'>
           <div className='w-full lg:w-6/12 px-4'>
             <h2
-              data-aos='fade-up'
-              data-aos-duration='1000'
               className='drop-shadow-lg roboto text-white text-dlate-500 text-4xl font-semibold'
             >
               My Projects

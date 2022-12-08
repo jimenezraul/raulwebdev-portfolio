@@ -53,8 +53,6 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center text-center mb-10'>
           <div className='w-full lg:w-6/12 px-4'>
             <h2
-              data-aos='fade-up'
-              data-aos-duration='1000'
               className='roboto text-slate-700 text-4xl font-semibold'
             >
               My Skills
@@ -65,8 +63,6 @@ const Skills = () => {
           {skillsList.map((skill, index) => (
             <div className='w-full md:w-6/12 lg:w-4/12 px-4 text-center'>
               <div
-                data-aos='fade-up'
-                data-aos-duration='1000'
                 className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300 overflow-hidden'
               >
                 <div className='flex-auto'>
