@@ -61,18 +61,23 @@ const NavBar = () => {
             isExpanded ? 'translate-y-0' : '-translate-y-80'
           } z-0 md:translate-y-0 transition-all ease-in-out w-full md:block md:w-auto`}
         >
-          <ul className='flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium rounded-full'>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  href={link.path}
-                  onClick={handleClose}
-                  className='transition-all ease-in-out duration-300 hover:scale-110 block py-2 pl-3 pr-4 text-gray-700  md:hover:text-blue-700 md:p-0 '
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
+          <ul className='flex flex-col p-4 mt-4 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium rounded-full'>
+            {navLinks.map((link, index) => {
+              const last = index === navLinks.length - 1;
+              return (
+                <li key={index}>
+                  <a
+                    href={link.path}
+                    onClick={handleClose}
+                    className={`${
+                      last ? 'bg-blue-400 text-white md:hover:text-white': "text-slate-700 md:hover:text-blue-700"
+                    } px-4 transition-all ease-in-out duration-300 hover:scale-110 block py-2 pl-3 pr-4`}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

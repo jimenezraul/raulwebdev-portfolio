@@ -61,7 +61,7 @@ const Skills = () => {
         </div>
         <div className='flex flex-wrap'>
           {skillsList.map((skill, index) => (
-            <div className='w-full md:w-6/12 lg:w-4/12 px-4 text-center'>
+            <div key={index} className='w-full md:w-6/12 lg:w-4/12 px-4 text-center'>
               <div
                 className='relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg border border-slate-300 overflow-hidden'
               >

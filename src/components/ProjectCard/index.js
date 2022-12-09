@@ -9,7 +9,7 @@ const ProjectCard = ({ project, index }) => {
     >
       <div className='flex flex-col bg-white rounded-lg shadow overflow-hidden'>
         <div
-          class='h-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden'
+          className='h-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden'
           style={style}
           title={project.title}
         ></div>
