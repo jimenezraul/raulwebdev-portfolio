@@ -13,7 +13,7 @@ const Hero = () => {
       <div className='container mx-auto'>
         <div className='w-full flex flex-wrap-reverse items-center justify-center py-2'>
           <div className='z-40 flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'>
-            <h1 className='text-slate-700 text-3xl md:text-4xl font-bold text-center roboto'>
+            <h1 className='text-slate-700 text-4xl md:text-6xl font-bold text-center roboto'>
               Hi there! I'm <span className='roboto text-blue-500'>Raul</span>
             </h1>
             <p className='text-center text-md md:text-lg'>
