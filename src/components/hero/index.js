@@ -1,46 +1,43 @@
-import profilePic from '../../img/profile.png';
-import bg from '../../img/blue-euclidean.png';
-import NavBar from '../Navbar';
-import { handleScroll } from '../../utils/handleScroll';
+import { handleScroll } from "../../utils/handleScroll";
+import Profile from "../../img/profile.png";
 
 const Hero = () => {
   return (
-    <section className='relative flex justify-center items-center bg-[#e7ecef] overflow-hidden'>
-      <NavBar />
-      <div className='absolute top-0 bottom-0 left-0 right-0 opacity-30'>
-        <img src={bg} alt='bg' className='w-full h-full' />
-      </div>
-      <div className='container mx-auto'>
-        <div className='w-full flex flex-wrap-reverse items-center justify-center py-2'>
-          <div className='z-40 flex flex-col items-center w-full md:w-1/2 max-w-lg rounded-xl'>
-            <h1 className='text-slate-700 text-4xl md:text-6xl font-bold text-center roboto'>
-              Hi there! I'm <span className='roboto text-blue-500'>Raul</span>
-            </h1>
-            <p className='text-center text-md md:text-lg'>
-              I'm a Full Stack Web Developer based in Deltona, Florida.
-            </p>
-            <div className='flex flex-wrap justify-center space-x-5'>
+    <div className="overflow-hidden">
+      <div className="relative px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
+        <div className="flex flex-col items-center justify-between w-full lg:flex-row">
+          <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
+            <div className="max-w-xl mb-6 lg:text-end">
+              <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-lg mb-6">
+                Hi there, I'm{" "}
+                <span className="inline-block text-blue-accent-700">Raul</span>
+              </h2>
+              <p className="text-gray-700 text-base md:text-lg">
+                I'm a Full Stack Web Developer based in Deltona, Florida.
+              </p>
+            </div>
+            <div className="flex items-center justify-start lg:justify-end">
               <a
-                href='mailto:rauljimenezengineer@gmail.com'
-                className='z-40 content-center text-center bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 shadow'
-              >
-                Let's Talk
-              </a>
-              <a
-                className='z-40 content-center text-center border border-gray-400 backdrop-blur hover:backdrop-blur-3xl text-slate-700 px-4 py-2 rounded-lg mt-4 shadow-lg'
+                href="#about-me"
                 onClick={handleScroll}
-                href='#projects'
+                className="items-center h-12 px-6 py-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-accent-400 hover:bg-blue-accent-700 focus:shadow-outline focus:outline-none"
               >
-                My Projects
+                LEARN MORE
               </a>
             </div>
           </div>
-          <div className='z-40 w-full md:w-1/2 max-w-md'>
-            <img src={profilePic} alt='profile'></img>
+          <div className="flex items-center justify-center lg:w-1/2">
+          <div className="flex w-full relative">
+            <img
+              className="z-50"
+              src={Profile}
+              alt=""
+            />
           </div>
         </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

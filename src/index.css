@@ -30,3 +30,17 @@ section {
 .lobster {
   font-family: 'Lobster', cursive;
 }
+
+.vh-half {
+  height: 30vh;
+}
+
+.barber-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: url(./img/picture.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
