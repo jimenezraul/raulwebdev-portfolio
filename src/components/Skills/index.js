@@ -40,7 +40,7 @@ const Skills = () => {
           <div key={index} className="text-center">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24">
             <i
-              className="text-blue-accent-700 text-4xl fab fa-html5"
+              className={skill.icon}
               aria-hidden="true"
             ></i>
           </div>
@@ -50,7 +50,7 @@ const Skills = () => {
           {skill.skills.map((item, index) => (
             <p
               key={index}
-              className="max-w-md mb-3 text-sm text-gray-900 sm:mx-auto"
+              className="max-w-md mb-3 text-sm text-gray-900 mx-auto"
             >
               {item}
             </p>

@@ -2,7 +2,7 @@ import Blog from "../img/blog.png";
 import BookMe from "../img/bookme.png";
 import ConnectMe from "../img/connectme.png";
 import ProPet from "../img/petstore.png";
-import IMS from "../img/ims.png";
+import IMS from "../img/IMS.png";
 import CoinHiz from "../img/coinhiz.png";
 
 const projects = [

@@ -72,6 +72,8 @@ const Projects = () => {
                 <div className="flex flex-wrap space-x-2 mt-5">
                   <a
                     href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label=""
                     className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg"
                   >
@@ -79,8 +81,10 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label=""
-                    className="inline-flex bg-blue-accent-200 hover:bg-blue-accent-700 shadow-sm hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white"
+                    className="inline-flex bg-blue-accent-200 hover:bg-blue-accent-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white"
                   >
                     Source Code
                   </a>
