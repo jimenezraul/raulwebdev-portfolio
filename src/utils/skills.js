@@ -8,11 +8,13 @@ const skills = [
       "JavaScript",
       "React",
       "Redux",
+      "NextJs",
       "TailwindCSS",
       "Bootstrap",
       "jQuery",
       "OAuth2",
       "APIs",
+      "MaterialUI",
     ],
   },
   {
@@ -29,6 +31,8 @@ const skills = [
       "Apollo",
       "RestAPI",
       "Python",
+      "Java/SpringBoot",
+      "Spring Security",
     ],
   },
   {
@@ -45,6 +49,8 @@ const skills = [
       "TypeScript",
       "Jest",
       "Scrum Board",
+      "SEO",
+      "IntelliJ",
     ],
   }
 ];

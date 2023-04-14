@@ -22,7 +22,7 @@ const Hero = () => {
                 onClick={handleScroll}
                 className="items-center h-12 px-6 py-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-accent-400 hover:bg-blue-accent-700"
               >
-                Learn More
+                About Me
               </a>
             </div>
           </div>
